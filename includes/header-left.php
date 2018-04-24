@@ -3,14 +3,14 @@
        <!-- logo -->
           <div class="logo anim-300">
             <a href="<?php echo home_url(); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="logo" class="anim-300 logo-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Manon Touchard Créations Graphiques direction artistique" class="anim-300 logo-img">
             </a>
           </div>
         <!-- /logo -->
     </div>
     <div class="col-xl-9 col-lg-9 col-9 anim-300 large-menu pr-15 text-right">
         <!-- nav -->
-        <nav class="d-flex">
+        <nav class="d-flex justify-content-end">
            <?php  customTheme_nav(); ?>
            <div id="menu-btn">
              <button>

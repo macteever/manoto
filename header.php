@@ -37,7 +37,7 @@
 			<!-- header -->
 			<header class="header anim-300 clear" role="banner">
 				<!-- nav -->
-				<div class="container menu-container anim-300">
+				<div class="menu-container anim-300">
                     <?php require 'includes/header-left.php'; ?>
                 </div>
 				<!-- /nav -->
