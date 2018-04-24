@@ -103,19 +103,6 @@
 
             });
 
-				// CAROUSEL 1
-
-				$(document).ready(function(){
-				  $('.owl-carousel').owlCarousel({
-						nav : true, // Show next and prev buttons
-				      items: 1,
-						loop: true,
-						dots: true,
-						animateIn: 'fadeIn',
-						animateOut: 'fadeOut',
-				  });
-				});
-
       /*  CONTAINER FULL WIDTH TEXT GRID */
 
          var w_container = $('.container').width();
@@ -146,39 +133,9 @@
          $('.text-container-fluid').css("width", wf_container/2);
 
       }).resize();
-// END RESIZE
+		// END RESIZE
 
-
-		// SLIDER BLOG HOME PAGE
-
-			$('.blog-slider').slick({
-
-			  infinite: true,
-        autoplay: false,
-			  slidesToShow: 1,
-			  slidesToScroll: 1,
-        arrows: false
-			});
-
-      $('.blog-prev').click(function(){
-      $('.blog-slider').slick('slickPrev');
-    });
-      $('.blog-next').click(function(){
-      $('.blog-slider').slick('slickNext');
-    });
-
-      // SLIDER PAGE BLOG
-
-      $('.subheader-blog-slider').slick({
-        infinite: true,
-        autoplay: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false
-      });
-
-
-		// // SMOOTH SCROLL
+		// SMOOTH SCROLL
 
   //       var $root = $("html, body");
   //       $("a").click(function() {

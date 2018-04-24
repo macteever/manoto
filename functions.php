@@ -61,20 +61,8 @@ function theme_styles(){
     wp_register_style('bootstrap-min', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '3.3.6', 'all');
     wp_enqueue_style('bootstrap-min'); // Enqueue it!
 
-    wp_register_style('fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '4.7.0', 'all');
-    wp_enqueue_style('fontawesome'); // Enqueue it
-
-    wp_register_style('slick', get_template_directory_uri() . '/assets/css/slick.css', array(), 'all');
-    wp_enqueue_style('slick'); // Enqueue it!
-
-    wp_register_style('slickTheme', get_template_directory_uri() . '/assets/css/slick-theme.css', array(), 'all');
-    wp_enqueue_style('slickTheme'); // Enqueue it!
-
     wp_register_style('animate', get_template_directory_uri() . '/assets/css/animate.css', array(), 'all');
     wp_enqueue_style('animate'); // Enqueue it!
-
-    wp_register_style('owl-carousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), 'all');
-    wp_enqueue_style('owl-carousel'); // Enqueue it!
 
 }
 
@@ -86,14 +74,6 @@ function custom_scripts(){
         wp_register_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), false, false); // Custom scripts
         wp_enqueue_script('scripts'); // Enqueue it!
 
-        wp_register_script('slick', get_template_directory_uri() . '/assets/js/lib/slick-1.6.0.min.js', array('jquery'), '1.6.0', true); // slickSlider script
-        wp_enqueue_script('slick'); // Enqueue it!
-
-        wp_register_script('mapsApi', get_template_directory_uri() . '/assets/js/mapsApi.js', array('jquery'), false, false); // Custom scripts
-        wp_enqueue_script('mapsApi'); // Enqueue it!
-
-        wp_register_script('owl-carousel', get_template_directory_uri() . '/assets/js/lib/owl.carousel.min.js', array('jquery'), '2.2.1', true); // owl-carousel scripts
-        wp_enqueue_script('owl-carousel'); // Enqueue it!
     }
 }
 
@@ -451,23 +431,23 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
 function create_post_type_html5()
 {
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
+    // register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('taxonomy-projets', 'projets');
+    register_post_type('projets', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('Projets', 'custom-theme'), // Rename these to suit
+            'singular_name' => __('Projets', 'custom-theme'),
+            'add_new' => __('Add New', 'custom-theme'),
+            'add_new_item' => __('Add New Projet', 'custom-theme'),
+            'edit' => __('Edit', 'custom-theme'),
+            'edit_item' => __('Edit Projet', 'custom-theme'),
+            'new_item' => __('New Projet', 'custom-theme'),
+            'view' => __('View Projet', 'custom-theme'),
+            'view_item' => __('View Projet', 'custom-theme'),
+            'search_items' => __('Search Projet', 'custom-theme'),
+            'not_found' => __('No Projet found', 'custom-theme'),
+            'not_found_in_trash' => __('Projet Not found in Trash', 'custom-theme')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -480,10 +460,33 @@ function create_post_type_html5()
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
-            'post_tag',
-            'category'
+            'post_tag'
         ) // Add Category and Post Tags support
-    ));
+    )
+  );
+  register_taxonomy(
+      'taxonomy-projets',
+      'projets',
+      array(
+          'label'  => __('Custom Taxonomy', 'custom-theme'),
+          'labels' =>
+             array(
+                  'name' 			=> __('Custom Taxonomies', 'custom-theme'),
+                  'singular_name' => __('Custom Taxonomy', 'custom-theme'),
+                  'all_items' 	=> __('All Custom Taxonomy', 'custom-theme'),
+                  'edit_item' 	=> __('Edit Custom Taxonomy', 'custom-theme'),
+                  'view_item' 	=> __('See Custom Taxonomy', 'custom-theme'),
+                  'update_item' 	=> __('Update Custom Taxonomy', 'custom-theme'),
+                  'add_new_item' 	=> __('Add Custom Taxonomy', 'custom-theme'),
+                  'new_item_name' => __('New Custom Taxonomy', 'custom-theme'),
+                  'search_items' 	=> __('Search Custom Taxonomy', 'custom-theme'),
+                  'popular_items' => __('Popular Custom Taxonomy', 'custom-theme')
+             ),
+          'hierarchical' => true,
+          'public' => true,
+          'has_archive' => true,
+      )
+  );
 }
 
 /*------------------------------------*\

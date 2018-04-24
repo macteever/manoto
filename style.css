@@ -40,7 +40,7 @@ html {
 body {
 	font-size: 14px;
 	color:#444;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'UniversLTStd';
 
 }
 
@@ -433,9 +433,8 @@ button.menu-open span {
 	float: left;
 }
 .logo-img {
-	width: 75px;
-  height: auto;
-  margin-top: 60px;
+	width: 150px;
+	height: auto;
 }
 /* nav */
 .nav {
@@ -776,42 +775,49 @@ textarea{
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
-.gotham-b{
-	font-family: 'Gotham Book';
-}
-.gotham-li{
-	font-family: 'Gotham Light Italic'
-}
-.open{
-	font-family: 'Open Sans', sans-serif;
-}
 .roboto{
 	font-family: 'Roboto', sans-serif;
 }
-
-@font-face {
-	font-family: 'Gotham Light Italic';
-	src: url('assets/fonts/Gotham-LightItalic.eot');
-	src: url('assets/fonts/Gotham-LightItalic.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/Gotham-LightItalic.woff') format('woff'),
-		url('assets/fonts/Gotham-LightItalic.ttf') format('truetype'),
-		url('assets/fonts/Gotham-LightItalic.svg#Gotham-LightItalic') format('svg');
-	font-weight: 300;
-	font-style: italic;
+.atmosphere{
+	font-family: 'atmosphere_script_typefaceRg';
 }
-
-@font-face {
-	font-family: 'Gotham Book';
-	src: url('assets/fonts/Gotham-Book.eot');
-	src: url('assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/Gotham-Book.woff') format('woff'),
-		url('assets/fonts/Gotham-Book.ttf') format('truetype'),
-		url('assets/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
-	font-weight: normal;
-	font-style: normal;
+.univers-bold{
+	font-family: 'UniversLTStd-BoldCn';
 }
-
-
+.univers{
+	font-family: 'UniversLTStd-Cn';
+}
+@font-face {
+    font-family: 'atmosphere_script_typefaceRg';
+    src: url('assets/fonts/atmosphere-regular-webfont.eot');
+    src: url('assets/fonts/atmosphere-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/atmosphere-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/atmosphere-regular-webfont.woff') format('woff'),
+         url('assets/fonts/atmosphere-regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/atmosphere-regular-webfont.svg#atmosphere_script_typefaceRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'UniversLTStd-BoldCn';
+  src: url('assets/fonts/UniversLTStd-BoldCn.eot');
+  src: url('assets/fonts/UniversLTStd-BoldCn.eot?#iefix') format('embedded-opentype'),
+		 url('assets/fonts/UniversLTStd-BoldCn.woff') format('woff'),
+		 url('assets/fonts/UniversLTStd-BoldCn.ttf') format('truetype'),
+		 url('assets/fonts/UniversLTStd-BoldCn.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UniversLTStd-Cn';
+  src: url('assets/fonts/UniversLTStd-Cn.eot') format('embedded-opentype');
+  src: url('assets/fonts/UniversLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+		 url('assets/fonts/UniversLTStd-Cn.woff') format('woff'),
+		 url('assets/fonts/UniversLTStd-Cn.ttf') format('truetype'),
+		 url('assets/fonts/UniversLTStd-Cn.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
