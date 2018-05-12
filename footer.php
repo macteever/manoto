@@ -3,16 +3,16 @@
 				<div class="container-fluid" id="contact">
 					<div class="container pt-30 pb-10">
 						<div class="row">
-							<div class="col-xl-2 col-lg-2 col-md-6 col-12 d-flex align-items-center">
+							<div class="col-xl-2 col-lg-2 col-sm-4 col-6 d-flex align-items-center">
 								<img class="m-l-auto m-r-auto" src="<?=get_template_directory_uri().'/assets/img/logo-blanc.svg'?>" alt="Manon Touchard Design et création graphiques"/>
 							</div>
-							<div class="col-xl-4 col-lg-3 hidden-md col-12">
+							<div class="col-xl-4 col-lg-3 hidden-sm col-12">
 
 							</div>
-							<div class="col-xl-3 col-lg-3 hidden-md col-12">
+							<div class="col-xl-3 col-lg-3 hidden-sm col-12">
 
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-end">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-end footer-rs">
 								<a href="#" target="blank"><i class="fab fa-facebook text-white fs-24 ml-10" aria-hidden="true"></i></a>
 								<a href="#" target="blank"><i class="fab fa-instagram text-white fs-24 ml-10" aria-hidden="true"></i></a>
 								<a href="#" target="blank"><i class="fab fa-behance text-white fs-24 ml-10" aria-hidden="true"></i></a>

@@ -874,7 +874,8 @@ textarea{
 	}
 	/** HOME / ARCHIVE TRAVAUX **/
 	.archive-row1 img, .archive-row2 img{
-		width: 72%;
+		width: 92%;
+		height: 280px;
 	}
 	/* CONTACT */
 	.contact h1{
@@ -882,6 +883,13 @@ textarea{
 	}
 	.contact input, textarea{
 		width: 90%;
+	}
+	/* FOOTER */
+	.footer-rs{
+		margin-left: auto;
+	}
+	.copyright p{
+		text-align: center;
 	}
 
 }
@@ -895,13 +903,23 @@ textarea{
 	.blog-next{display: none!important;}
 	.coaching-row p{padding-left: 13%;}
 	.about-top-right{padding-left: 13%;}
-	#menu-btn{
-		opacity: 1;
-	}
 	#menu-nav-mobile{padding-left: 0px; margin-top: calc(50vh - 460px / 2 );}
 	.nav-mobile ul li{line-height: 80px;}
 	.nav-mobile ul li a{font-size: 24px;}
 	.main-navigation-zone ul li{ margin-right: 15px;}
+	.large-menu nav ul{
+		display: none!important;
+	}
+	.logo-img {
+	}
+	.menu-section{
+		height: 60px;
+	}
+	#menu-btn{
+		display: block;
+		opacity: 1;
+		margin-left: auto;
+	}
 	#menu-btn:before{
 		height: 45px;
 	}
@@ -921,13 +939,6 @@ textarea{
 	.blog-posts-img{
 		height: 200px;
 		float: none!important;
-	}
-	.logo-img {
-		width: 70px;
-		margin-top: 50px;
-	}
-	.menu-section{
-		height: 60px;
 	}
 	/* CONTACT */
 	.text-container-left{
@@ -959,12 +970,13 @@ textarea{
 		display: none!important;
 	}
 	.logo-img{
-		margin-top: 25%;
-		width: 75%;
-		max-width: 150%!important;
+		max-width: 170%!important;
 	}
 	#menu-btn{
 		margin-left: auto;
+	}
+	.menu-section{
+		padding: 0px 30px;
 	}
 	/* HOME PAGE */
 	.home-site-title{
