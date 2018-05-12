@@ -44,6 +44,26 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
+// SET ARCHIVE PROJETS AS FRONT PAGE
+add_action("pre_get_posts", "custom_front_page");
+function custom_front_page($wp_query){
+    //Ensure this filter isn't applied to the admin area
+    if(is_admin()) {
+        return;
+    }
+    if($wp_query->get('page_id') == get_option('page_on_front')):
+
+        $wp_query->set('post_type', 'projets');
+        $wp_query->set('page_id', ''); //Empty
+
+        //Set properties that describe the page to reflect that
+        //we aren't really displaying a static page
+        $wp_query->is_page = 0;
+        $wp_query->is_singular = 0;
+        $wp_query->is_post_type_archive = 1;
+        $wp_query->is_archive = 1;
+    endif;
+}
 
 // CUSTOM functions
 function my_setup() {
@@ -254,7 +274,7 @@ function html5wp_pagination()
 // Custom Excerpts
 function html5wp_index($length) // Create 20 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
 {
-    return 20;
+    return 10;
 }
 
 // Create 40 Word Callback for Custom Post Excerpts, call using html5wp_excerpt('html5wp_custom_post');

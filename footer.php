@@ -1,21 +1,34 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 				<div class="container-fluid" id="contact">
-					<div class="row justify-content-around mw-70 mx-auto mb-30">
-							<a href="#" target="blank"><i class="fa fa-facebook-official text-darkgrey fs-28" aria-hidden="true"></i></a>
-							<a href="#" target="blank"><i class="fa fa-instagram text-darkgrey fs-28" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-google-plus text-darkgrey fs-24" aria-hidden="true"></i></a>
-					</div>
+					<div class="container pt-30 pb-10">
+						<div class="row">
+							<div class="col-xl-2 col-lg-2 col-md-6 col-12 d-flex align-items-center">
+								<img class="m-l-auto m-r-auto" src="<?=get_template_directory_uri().'/assets/img/logo-blanc.svg'?>" alt="Manon Touchard Design et création graphiques"/>
+							</div>
+							<div class="col-xl-4 col-lg-3 hidden-md col-12">
 
-					<div class="row copyright text-darkgrey justify-content-center">
-						<!-- copyright -->
-						<p class="text-darkgrey fs-15">
-							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
-							<a href="/mentions-legales" class="text-darkgrey">-<b> Mentions légales</b></a>
-						</p>
-						<!-- /copyright -->
-					</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 hidden-md col-12">
 
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-end">
+								<a href="#" target="blank"><i class="fab fa-facebook text-white fs-24 ml-10" aria-hidden="true"></i></a>
+								<a href="#" target="blank"><i class="fab fa-instagram text-white fs-24 ml-10" aria-hidden="true"></i></a>
+								<a href="#" target="blank"><i class="fab fa-behance text-white fs-24 ml-10" aria-hidden="true"></i></a>
+								<a href="#" target="blank"><i class="fab fa-linkedin text-white fs-24 ml-10" aria-hidden="true"></i></a>
+								<a href="#" target="blank"><i class="fab fa-pinterest text-white fs-24 ml-10" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="row copyright text-white justify-content-center mt-15">
+							<!-- copyright -->
+							<p class="text-white fs-15">
+								&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
+								<a href="/mentions-legales" class="text-white">- Mentions légales</a>
+							</p>
+							<!-- /copyright -->
+						</div>
+					</div>
 				</div>
 			</footer>
 			<!-- /footer -->

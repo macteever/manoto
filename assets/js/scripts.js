@@ -85,23 +85,37 @@
       	$(window).on("load resize", function () {
 
           //**** HOME PAGE ****/
+			 // ROW 1
+          var about_img_height = $('.archive-row1 ').height() + 30 + 'px';
+          var about_img_width = $('.archive-row1 img').outerWidth();
 
-          var about_img_height = $('.home-about-right').height();
-          var about_img_width = $('.home-about-right').outerWidth();
+          $('.archive-cadre3').css('width', about_img_width);
+          $('.archive-cadre3').css('height', about_img_height);
+			 // ROW 2
+			 var about_img_height = $('.archive-row2 ').height() + 30 + 'px';
+          var about_img_width = $('.archive-row2 img').outerWidth();
 
-          $('.home-about-cadre').css('width', about_img_width);
-          $('.home-about-cadre').css('height', about_img_height);
+          $('.archive-cadre2').css('width', about_img_width);
+          $('.archive-cadre2').css('height', about_img_height);
 
-          $(window).scroll(function(){
-               if ($(this).scrollTop() > 200){
-                  $('.home-about-cadre').addClass('cadre-anim');
-                }
-                else
-                  if ($('.home-about-cadre').hasClass('cadre-anim')) {
-                    $('.home-about-cadre').removeClass('cadre-anim');
-                  }
+			 // ROW 3
+			 var about_img_height = $('.archive-row3 ').height() + 30 + 'px';
+          var about_img_width = $('.archive-row3 img').outerWidth();
 
-            });
+          $('.archive-cadre1').css('width', about_img_width);
+          $('.archive-cadre1').css('height', about_img_height);
+
+			 // ANIM CADRE
+          // $(window).scroll(function(){
+          //      if ($(this).scrollTop() > 200){
+          //         $('.archive-cadre').addClass('cadre-anim');
+          //       }
+          //       else
+          //         if ($('.archive-cadre').hasClass('cadre-anim')) {
+          //           $('.archive-cadre').removeClass('cadre-anim');
+          //         }
+          //
+          //   });
 
       /*  CONTAINER FULL WIDTH TEXT GRID */
 

@@ -15,6 +15,7 @@
 
 /* global box-sizing */
 *,
+
 *:after,
 *:before {
 	-moz-box-sizing:border-box;
@@ -154,6 +155,7 @@ strong{
 .text-black{color: #444;}
 .text-grey{color: #575756;}
 .text-darkgrey{color: #3D3D3D;}
+.text-violet{color: #604D8E;}
 
 .white-bkg{background-color: #FFFFFF;}
 .light-grey-bkg{background-color: #F4F3F3;}
@@ -303,6 +305,7 @@ strong{
 .pt-50{padding-top: 50px;}
 .pt-80{padding-top: 80px;}
 .pt-100{padding-top: 100px;}
+.pt-150{padding-top: 150px;}
 .pt-200{padding-top: 200px;}
 .pt-250{padding-top: 250px;}
 .pt-300{padding-top: 300px;}
@@ -468,8 +471,8 @@ main{
 }
 .large-menu nav ul li a{
 	font-family: 'UniversLTStd-BoldCn';
-	font-size: 17px;
-	color: #F8CACA;
+	font-size: 16px;
+	color: #604D8E;
 	text-transform: uppercase;
 }
 .large-menu nav ul li a::after{
@@ -478,7 +481,7 @@ main{
 	width: 10px;
 	height: 10px;
 	border-radius: 100%;
-	background-color: #F8CACA;
+	background-color: #604D8E;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -3px;
@@ -494,13 +497,14 @@ main{
 .resize-menu{
 	height: 60px;
 	background: #FFF;
-	border-bottom: solid 2px #eaeaea;
+	border-bottom: solid 1px #eaeaea;
 }
 /* sidebar */
 
 /* footer */
 .footer {
-	border-top: solid 2px #3D3D3D;
+	background: url('assets/img/background-footer.svg');
+	background-size: cover;
 }
 
 .page-loader{
@@ -530,36 +534,56 @@ main{
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
+/** PAGE TRAVAUX **/
 
-/* Page Home */
-.home-bkg{
-	background-repeat: no-repeat!important;
-	background-size: cover!important;
-	background-position: bottom!important;
-}
-.home-news{
-	background-color: #FFF;
-}
-.home-post{
-	background-size: cover!important;
-	background-repeat: no-repeat!important;
-	background-position: center!important;
-	border: solid 10px #FFF;
-}
-.home-post h3{
+.archive-cadre3{
+	border: solid 4px #604D8E;
 	position: absolute;
-	bottom: 10px;
+	z-index: -1;
+	right: calc(0px + 15px);
+	top: -40px;
 }
-
-/* PAGE CAROUSEL 1 */
-
-.owl-item.active .item-child {
-    transition: transform 3000ms linear 0s;
-    /* This should be based on your carousel setting. For bs, it should be 5second*/
-    transform: scale(1.05, 1.05);
+.archive-cadre2{
+	border: solid 4px #604D8E;
+	position: absolute;
+	z-index: -1;
+	right: calc(0px + 15px);
+	top: -40px;
 }
-.owl-item.active .item-child h2{
-	transform: scale(0.90)!important;
+.archive-cadre1{
+	border: solid 4px #604D8E;
+	position: absolute;
+	z-index: -1;
+	right: calc(0px + 15px);
+	top: -40px;
+}
+.archive-post-intro h2{
+	margin-top: 0px!important;
+}
+.archive-post-intro h2 a{
+	padding: 5px 0px 10px 20px;
+	color: #604D8E;
+}
+.post-excerpt p{
+	display: inline-block;
+	background-color: white;
+	margin-bottom: 0px!important;
+	padding-top: 30px;
+}
+.archive-row1 img{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+.archive-row2 img{
+	width: 450px;
+	height: 450px;
+	object-fit: cover;
+}
+.archive-row3 img{
+	width: 92%;
+	height: 280px;
+	object-fit: cover;
 }
 
 /** PAGE CONTACT **/
@@ -603,19 +627,6 @@ textarea{
 }
 
 /* Footer-contact */
-
-.partner{
-	box-shadow: 0 -1px 9px 0 rgba(155,155,155,0.35);
-}
-.partner:before{
-	content: '';
-	display: block;
-	width: 65%;
-	height: 3px;
-	background-color: #9B1F52;
-	position: absolute;
-    left: 0;
-}
 
 #contact{
 	padding-top: 30px;
@@ -861,19 +872,9 @@ textarea{
 	.blog-posts-img{
 		height: 200px;
 	}
-	/** HOME **/
-	.home h1{
-		font-size: 70px;
-	}
-	.home h1 span{
-		font-size: 100px;
-		line-height: 70px;
-	}
-	.text-container5-left{
-		width: auto!important;
-		margin-left: auto!important;
-		margin-right: auto!important;
-		padding: 0px 50px;
+	/** HOME / ARCHIVE TRAVAUX **/
+	.archive-row1 img, .archive-row2 img{
+		width: 72%;
 	}
 	/* CONTACT */
 	.contact h1{
