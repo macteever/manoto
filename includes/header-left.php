@@ -18,7 +18,7 @@
                 <span></span>
                 <span></span>
              </button>
-             <span class="text-darkgrey ml-10">MENU</span>
+             <span class="text-violet univers ml-10">MENU</span>
           </div>
         </nav>
         <!-- /nav -->

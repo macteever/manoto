@@ -6,7 +6,7 @@
 			</div>
 			<footer class="footer" role="contentinfo">
 				<div class="container-fluid" id="contact">
-					<div class="container pt-30 pb-10">
+					<div class="container pt-50 pb-10">
 						<div class="row">
 							<div class="col-xl-2 col-lg-2 col-sm-4 col-6 d-flex align-items-center">
 								<img class="m-l-auto m-r-auto" src="<?=get_template_directory_uri().'/assets/img/logo-blanc.svg'?>" alt="Manon Touchard Design et création graphiques"/>
@@ -19,10 +19,10 @@
 							</div>
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-end footer-rs">
 								<a href="#" target="blank"><i class="fab fa-facebook text-white fs-24 ml-10" aria-hidden="true"></i></a>
-								<a href="#" target="blank"><i class="fab fa-instagram text-white fs-24 ml-10" aria-hidden="true"></i></a>
-								<a href="#" target="blank"><i class="fab fa-behance text-white fs-24 ml-10" aria-hidden="true"></i></a>
-								<a href="#" target="blank"><i class="fab fa-linkedin text-white fs-24 ml-10" aria-hidden="true"></i></a>
-								<a href="#" target="blank"><i class="fab fa-pinterest text-white fs-24 ml-10" aria-hidden="true"></i></a>
+								<a href="https://www.instagram.com/manoto.creation/" target="blank"><i class="fab fa-instagram text-white fs-24 ml-10" aria-hidden="true"></i></a>
+								<a href="https://www.behance.net/touchtouch" target="blank"><i class="fab fa-behance text-white fs-24 ml-10" aria-hidden="true"></i></a>
+								<a href="https://www.linkedin.com/in/manon-touchard-23547710b/" target="blank"><i class="fab fa-linkedin text-white fs-24 ml-10" aria-hidden="true"></i></a>
+								<a href="https://www.pinterest.fr/manon8633" target="blank"><i class="fab fa-pinterest text-white fs-24 ml-10" aria-hidden="true"></i></a>
 							</div>
 						</div>
 						<div class="row copyright text-white justify-content-center mt-15">

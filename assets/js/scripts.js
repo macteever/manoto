@@ -128,35 +128,16 @@
 			 $('.about-exp-cadre').css('width', about_exp_width);
 			 $('.about-exp-cadre').css('height', about_exp_height);
 
+			 // CONTACT
 
-      /*  CONTAINER FULL WIDTH TEXT GRID */
+ 			 var contact_cadre_width = $('.contact-form-content').outerWidth();
+ 			 var contact_cadre_height = $('.contact-form-content').outerHeight();
 
-         var w_container = $('.container').width();
-         var w_window =$( window ).width();
-         $('.text-container').css("width", w_container/2);
-         $('.text-container-left').css("width", w_container/2);
-         $('.text-container-left').css("margin-left",(w_window - w_container)/2);
-         $('.text-container-left-p').css("padding-left",(w_window - w_container)/2);
-
-         $('.text-container4').css('width', w_container/3);
-         $('.text-container4-left').css("width", w_container/3);
-         $('.text-container4-left').css("margin-left",(w_window - w_container)/2);
-
-         $('.text-container5').css('width', w_container/2.4);
-         $('.text-container5-left').css("width", w_container/2.4);
-         $('.text-container5-left').css("margin-left",(w_window - w_container)/2);
-
-          $('.text-container5-5').css('width', w_container/2.18);
-         $('.text-container5-5-left').css("width", w_container/2.18);
-         $('.text-container5-5-left').css("margin-left",(w_window - w_container)/2);
-
-         $('.text-container4-padding').css('width', w_container/3);
-         $('.text-container4-left-padding').css("width", (w_container/3) + (w_window - w_container)/2);
-         $('.text-container4-left-padding').css("padding-left",(w_window - w_container)/2);
+ 			 $('.contact-cadre').css('width', contact_cadre_width);
+ 			 $('.contact-cadre').css('height', contact_cadre_height);
 
 
-         var wf_container = $('.container-fluid').width();
-         $('.text-container-fluid').css("width", wf_container/2);
+
 
       }).resize();
 		// END RESIZE
