@@ -394,14 +394,23 @@ strong{
 	font-size: 24px;
 	line-height: 60px;
 	margin-left: 15px;
-	text-align:center;
-    display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.nav-mobile ul li::after{
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background-color: #604D8E;
+	display: block;
 }
 .nav-mobile ul li a{
 	color: #604D8E;
 	font-size: 52px;
 	text-decoration: none;
-	font-family: 'atmosphere_script_typefaceRg';
+	font-family: 'UniversLTStd-BoldCn';
 }
 
 button {
@@ -434,7 +443,7 @@ button span {
 
 button.menu-open span {
   top: 7px;
-  background-color: #6048DE;
+  background-color: #604D8E;
   transition: top 0.2s linear, opacity 0.1s 0.2s linear, transform 0.2s 0.2s linear; }
   button.menu-open span:nth-child(1) {
     transform: rotate(45deg); }
