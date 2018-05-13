@@ -1,4 +1,9 @@
 			<!-- footer -->
+			<div class="back-top anim-300">
+				<a class="back-top-page" href="#">
+					<img src="<?=get_template_directory_uri().'/assets/img/back-top-manon-touchard-freelance-graphiste.svg'?>" alt="Graphiste directeur artistique freelance Manon Touchard Bordeaux Poitiers">
+				</a>
+			</div>
 			<footer class="footer" role="contentinfo">
 				<div class="container-fluid" id="contact">
 					<div class="container pt-30 pb-10">

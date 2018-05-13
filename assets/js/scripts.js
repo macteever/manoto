@@ -2,8 +2,6 @@
 
 		$(document).ready(function(){
 
-
-
     // RESIZE HEADER SCROLLTOP
 
     $(window).scroll(function(){
@@ -84,7 +82,7 @@
 			 // START RESIZE
       	$(window).on("load resize", function () {
 
-          //**** HOME PAGE ****/
+          //**** TRAVAUX PAGE ****/
 			 // ROW 1
           var about_img_height = $('.archive-row1 ').height() + 30 + 'px';
           var about_img_width = $('.archive-row1 img').outerWidth();
@@ -105,17 +103,31 @@
           $('.archive-cadre1').css('width', about_img_width);
           $('.archive-cadre1').css('height', about_img_height);
 
-			 // ANIM CADRE
-          // $(window).scroll(function(){
-          //      if ($(this).scrollTop() > 200){
-          //         $('.archive-cadre').addClass('cadre-anim');
-          //       }
-          //       else
-          //         if ($('.archive-cadre').hasClass('cadre-anim')) {
-          //           $('.archive-cadre').removeClass('cadre-anim');
-          //         }
-          //
-          //   });
+			 // ANIM CADRE TRAVAUX
+
+			 $(".archive-row").hover(
+			  function () {
+			    $(this).addClass('archive-hover');
+			 },
+			 function () {
+			   $(this).removeClass('archive-hover');
+			 });
+
+			 // A PROPOS
+
+			 // ABOUT CATEGORY
+			 var about_cat_width = $('.about-cat-content').outerWidth();
+
+			 $('.about-cat-cadre').css('width', about_cat_width);
+
+			 // ABOUT EXPERIENCES
+
+			 var about_exp_width = $('.about-exp-content').outerWidth();
+			 var about_exp_height = $('.about-exp-content').outerHeight() + 40 + 'px';
+
+			 $('.about-exp-cadre').css('width', about_exp_width);
+			 $('.about-exp-cadre').css('height', about_exp_height);
+
 
       /*  CONTAINER FULL WIDTH TEXT GRID */
 
@@ -148,6 +160,22 @@
 
       }).resize();
 		// END RESIZE
+
+		$(".back-top-page").click(function() {
+		  $("html, body").animate({ scrollTop: 0 }, "slow");
+		  return false;
+		});
+
+		$(window).scroll(function(){
+        var $header = $('.header');
+  			var $backTopBtn = $('.back-top');
+        if ($(this).scrollTop() > 600){
+  				$backTopBtn.css({"-webkit-transform":"translateY(-250px)"});
+        }
+        else{
+  				$backTopBtn.css({"-webkit-transform":"translateY(0px)"});
+        }
+      });
 
 		// SMOOTH SCROLL
 
